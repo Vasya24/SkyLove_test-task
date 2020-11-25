@@ -20,26 +20,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="248b1499-cf33-44ba-9360-b183986641cd" name="Default Changelist" comment="Trying to fix the build">
-      <change afterPath="$PROJECT_DIR$/.appveyor.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.browserslistrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eslintignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/SkyLove.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/LabGrotesque-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/Fonts/OpenSans-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/Fonts/OpenSans-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/Fonts/OpenSans-ExtraBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/Fonts/OpenSans-ExtraBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/Fonts/OpenSans-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/Fonts/OpenSans-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/Fonts/OpenSans-LightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/Fonts/OpenSans-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/Fonts/OpenSans-Semibold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/Fonts/OpenSans-SemiboldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/Fonts/neris-black-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/Fonts/neris-light-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/Fonts/neris-semibold-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/Fonts/neris-thin-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/img/bell.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/img/direct.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/img/home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/img/mail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/img/plus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/img/search.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/LabGrotesque-Regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +66,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="ProjectId" id="1keHbc4dLYIyYGsoRqUq98O5jDG" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -72,6 +87,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -80,6 +96,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/css" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
@@ -91,7 +108,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606054210161</updated>
-      <workItem from="1606054211817" duration="1274000" />
+      <workItem from="1606054211817" duration="17586000" />
+      <workItem from="1606309301602" duration="8011000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1606056251726</created>
@@ -100,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606056251726</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Trying to fix the build">
+      <created>1606056571862</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1606056571862</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +141,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
@@ -123,17 +149,25 @@
     <option name="LAST_COMMIT_MESSAGE" value="Trying to fix the build" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="400" y="268" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606142064272">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state x="400" y="268" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1440.875@0.25.1440.875" timestamp="1606142064272" />
     <state x="458" y="213" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606056140633">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state x="458" y="213" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.25.1440.875@0.25.1440.875" timestamp="1606056140633" />
-    <state x="320" y="199" key="Vcs.Push.Dialog.v2" timestamp="1606056258288">
+    <state x="230" y="130" key="SettingsEditor" timestamp="1606124670872">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state x="320" y="199" key="Vcs.Push.Dialog.v2/0.25.1440.875@0.25.1440.875" timestamp="1606056258288" />
-    <state x="385" y="214" key="search.everywhere.popup" timestamp="1606054373452">
+    <state x="230" y="130" key="SettingsEditor/0.25.1440.875@0.25.1440.875" timestamp="1606124670872" />
+    <state x="320" y="199" key="Vcs.Push.Dialog.v2" timestamp="1606056576539">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state x="385" y="214" key="search.everywhere.popup/0.25.1440.875@0.25.1440.875" timestamp="1606054373452" />
+    <state x="320" y="199" key="Vcs.Push.Dialog.v2/0.25.1440.875@0.25.1440.875" timestamp="1606056576539" />
+    <state x="385" y="214" width="670" height="676" key="search.everywhere.popup" timestamp="1606119841997">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state x="385" y="214" width="670" height="676" key="search.everywhere.popup/0.25.1440.875@0.25.1440.875" timestamp="1606119841997" />
   </component>
 </project>

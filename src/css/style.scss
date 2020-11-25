@@ -1,4 +1,166 @@
+@font-face {
+  font-family: NerisBlack;
+  src: url('Fonts/neris-black-webfont.ttf');
+}
+
+@font-face {
+  font-family: NerisLight;
+  src: url('Fonts/neris-light-webfont.ttf');
+}
+
+@font-face {
+  font-family: NerisSemibold;
+  src: url('Fonts/neris-semibold-webfont.ttf');
+}
+
+@font-face {
+  font-family: NerisThin;
+  src: url('Fonts/neris-thin-webfont.ttf');
+}
+
+@font-face {
+  font-family: OpenSansBold;
+  src: ('Fonts/OpenSans-Bold.ttf')
+}
+
+@font-face {
+  font-family: OpenSansBoldItalic;
+  src: url('Fonts/OpenSans-BoldItalic.ttf')
+}
+
+@font-face {
+  font-family: OpenSansExtraBold;
+  src: url('Fonts/OpenSans-ExtraBold.ttf')
+}
+
+@font-face {
+  font-family: OpenSansExtraBoldItalic;
+  src: url('Fonts/OpenSans-ExtraBoldItalic.ttf')
+}
+
+@font-face {
+  font-family: 'OpenSansItalic';
+  src: url('Fonts/OpenSans-Italic.ttf')
+}
+
+@font-face {
+  font-family: 'OpenSansLight';
+  src: url('Fonts/OpenSans-Light.ttf')
+}
+
+@font-face {
+  font-family: 'OpenSansLightItalic';
+  src: url('Fonts/OpenSans-LightItalic.ttf')
+}
+
+@font-face {
+  font-family: 'OpenSansRegular';
+  src: url('Fonts/OpenSans-Regular.ttf')
+}
+
+@font-face {
+  font-family: 'OpenSansSemibold';
+  src: url('Fonts/OpenSans-Semibold.ttf')
+}
+
+@font-face {
+  font-family: 'OpenSansSemiboldItalic';
+  src: url('Fonts/OpenSans-SemiboldItalic.ttf')
+}
+
 * {
   margin: 0;
   padding: 0;
 }
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: #EEF2F5;
+}
+
+.header {
+  //position: fixed;
+  background-color: #527199;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  .logo-box {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 9.57%;
+    height: 51px;
+    margin-top: 10px;
+  }
+  .home {
+    width: 3.59%;
+    background-color: #3D5C84;
+    position: relative;
+
+    //&-pic {
+    //
+    //}
+  }
+  .district {
+    width: 5.43%;
+    background-color: #5F7FA7;
+    position: relative;
+
+  }
+  .city {
+    width: 5.47%;
+    background-color: #5F7FA7;
+    position: relative;
+
+  }
+  .functions-block {
+    position: relative;
+    width: 13.75%;
+    height: 56px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    .function {
+      position: relative;
+      width: 21.02%;
+      height: 100%;
+      border-radius: 50%;
+      background-color: #5B7BA2;
+      &-icon {
+        position: relative;
+        margin: 50%;
+      }
+    }
+  }
+
+}
+
+.under-header {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  filter: drop-shadow(0px 1px 1px rgba(0,0,1,0.1));
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  .address-dropdown {
+    width: 17.97%;
+    position: relative;
+    left: 26.17%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    vertical-align: middle;
+  }
+  .star {
+    width: 25px;
+    height: 24px;
+  }
+}
+
+
+
