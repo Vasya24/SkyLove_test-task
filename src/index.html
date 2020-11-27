@@ -58,41 +58,35 @@
 </div>
 <main>
   <section class="posts-section">
-    <ul class="top-marks">
-      <li class="mark"><div class="mark-box">Новости</div></li>
-      <li class="mark"><div class="mark-box">Объявления</div></li>
-      <li class="mark"><div class="mark-box">Мероприятия</div></li>
-      <li class="mark"><div class="mark-box">Вопросы</div></li>
-      <li class="mark"><div class="mark-box">Отчеты</div></li>
-      <li class="mark"><div class="mark-box"><hr /><hr /><hr /></div></li>
-    </ul>
+    <div class="top-marks">
+      <div class="mark-box selected" id="news-mark">Новости</div>
+      <div class="mark-box" id="ads-mark">Объявления</div>
+      <div class="mark-box" id="events-mark">Мероприятия</div>
+      <div class="mark-box" id="questions-mark">Вопросы</div>
+      <div class="mark-box" id="reports-mark">Отчеты</div>
+      <div class="mark-box" id="others-mark"><hr /><hr /><hr /></div>
+    </div>
     <div class="posts-top-wrapper">
-    <ul class="posts-menu">
-      <li class="posts-menu-item">Все события</li>
-      <li class="posts-menu-item">Важные</li>
-      <li class="posts-menu-item">Мои</li>
-      <li class="posts-menu-item">Поиск</li>
-    </ul>
+    <div class="posts-menu">
+      <div class="posts-menu-item selected">Все события</div>
+      <div class="posts-menu-item">Важные</div>
+      <div class="posts-menu-item">Мои</div>
+      <div class="posts-menu-item">Поиск</div>
+    </div>
       <div class="sources">Источники</div>
       <button type="button" class="add-post">Добавить</button>
     </div>
 
-      <div class="post">
+      <div class="post" id="first">
         <div class="post-head">
-          <div class="post-info">
+
             <img src="css/img/titov.png" alt="Сергей Титов" class="post-author-pic">
-            <div class="post-author-textblock">
-              <span class="post-author-name">Сергей Титов</span>
-              <span class="post-author-status">(Депутат)</span>
-            </div>
-            <div class="post-other">
+
+          <div class="post-info">
+              <span class="post-author-name">Сергей Титов <span class="post-author-status">(Депутат)</span></span>
               <span class="post-date">25.07.2015</span>
-              <img src="css/img/planet.png" alt="planet" class="planet">
-            </div>
-            <div class="post-arrow">
-              V
-            </div>
           </div>
+            <img src="css/img/arrow.png" alt="arrow down" class="arrow">
         </div>
         <p class="post-header">По данному адресу произошёл захват территории
         </p>
@@ -107,9 +101,15 @@
           <span class="geo-address">Москва, ул. Набережная Тараса Шевченко 33</span>
         </div>
         <div class="post-photos">
-          <img src="css/img/ruins-1.png" alt="ruins" class="ruins">
-          <img src="css/img/ruins-2.png" alt="ruins" class="ruins">
-          <img src="css/img/ruins-3.png" alt="ruins" class="ruins">
+          <div class="ruins">
+          <img src="css/img/ruins-1.png" alt="ruins">
+          </div>
+          <div class="ruins">
+          <img src="css/img/ruins-2.png" alt="ruins">
+          </div>
+          <div class="ruins">
+          <img src="css/img/ruins-3.png" alt="ruins">
+          </div>
         </div>
         <div class="likes-section">
           <img src="css/img/share.png" alt="share" class="share">
@@ -130,18 +130,400 @@
             Показать все <span>208</span> комментариев
           </header>
           <div class="comment">
+            <img src="css/img/delete.png" alt="delete" class="delete-comment">
+            <div class="comment-info">
+              <div class="comment-author-pic" ></div>
+            <p class="comment-author">Низовцев Вячеслав Иванович <span class="author-status">(Ответственный депутат)</span></p>
+            </div>
+            <p class="comment-text">Пришло сообщение из Префектуры на электронную почту - что гаражи подлежат
+              сносу, дело передано на рассмотрение в МВД и Управу Фили-давыдково, что они
+              собираются искать владельцев этих гаражей.</p>
+            <footer class="comment-footer">
+              <span class="ago">3 часа назад</span>
+              <table border="1px" width="1px"></table>
+              <div class="reply-comment">Ответить</div>
+              <div class="comment-likes-block">
+                <img src="css/img/like.png" alt="like" class="comment-likes"><span class="comment-likes-qnt">5</span>
+                <img src="css/img/dislike.png" alt="dislike" class="comment-dislikes"><span class="comment-dislikes-qnt">0</span>
+                <img src="css/img/complain.png" alt="complain" class="comment-complain">
+              </div>
+            </footer>
+          </div>
 
+          <div class="comment">
+            <img src="css/img/delete.png" alt="delete" class="delete-comment">
+            <p class="comment-author">Сергей Титов</p>
+            <p class="comment-text">Обжаловал бездействие органов власти, направив обращение в Прокуратуру.</p>
+            <footer class="comment-footer">
+              <span class="ago">40 минут назад</span>
+              <div class="reply-comment">Ответить</div>
+              <div class="comment-likes-block">
+                <img src="css/img/like.png" alt="like" class="comment-likes"><span class="comment-likes-qnt">10</span>
+                <img src="css/img/dislike.png" alt="dislike" class="comment-dislikes"><span class="comment-dislikes-qnt">2</span>
+                <img src="css/img/complain.png" alt="complain" class="complain">
+              </div>
+            </footer>
+          </div>
+          <div class="comment">
+            <img src="css/img/delete.png" alt="delete" class="delete-comment">
+            <p class="comment-author">Юрист</p>
+            <p class="comment-text">Согласно статье 7.1. КоАП РФ «Самовольное занятие земельного участка»,
+              самовольное занятие земельного участка или использование земельного участка
+              без оформленных в установленном порядке правоустанавливающих документов
+              на землю, а в случае необходимости без документов, разрешающих осуществление
+              хозяйственной деятельности, влечет наложение административного штрафа на
+              граждан в размере от пятисот до одной тысячи рублей; на должностных лиц...
+            </p>
+            <footer class="comment-footer">
+              <span class="ago">13 минут назад</span>
+              <div class="reply-comment">Ответить</div>
+              <div class="comment-likes-block">
+                <img src="css/img/like.png" alt="like" class="comment-likes"><span class="comment-likes-qnt">26</span>
+                <img src="css/img/dislike.png" alt="dislike" class="comment-dislikes"><span class="comment-dislikes-qnt">0</span>
+                <img src="css/img/complain.png" alt="complain" class="complain">
+              </div>
+              <div class="comment-input-block">
+
+                  <input type="text" class="comment-input" placeholder="Комментировать...">
+
+              </div>
+            </footer>
           </div>
         </div>
       </div>
-      <div class="post"></div>
-      <div class="post"></div>
-      <div class="post"></div>
-      <div class="post"></div>
+
+
+
+
+
+
+
+
+
+
+    <div class="post" id="second">
+      <div class="post-head">
+        <div class="post-info">
+          <img src="css/img/man-3.png" alt="Павел Пономарёв" class="post-author-pic">
+          <div class="post-author-textblock">
+            <span class="post-author-name">Павел Пономарёв</span>
+          </div>
+          <div class="post-other">
+            <span class="post-date">25.07.2015</span>
+            <img src="css/img/planet.png" alt="planet" class="planet">
+          </div>
+          <div class="post-arrow">
+            V
+          </div>
+        </div>
+      </div>
+      <div class="post-text">
+        <img src="css/img/titov.png" alt="Сергей Титов" class="repost-pic" id="repost-pic">
+        <img src="css/img/repost-icon.png" alt="repost" class="repost-icon" id="repost-icon">
+        <p class="repost-text">Мама лгала маленькому Андрюше, что детей находят в капусте, и он
+          как-то со страхом начал смотреть на тушеную капусту с мясом.</p>
+      </div>
+      <div class="comments-section">
+        <header class="comments-header">
+          <div id="second-comments-actions">
+          <img src="css/img/star.png" alt="red star" class="red-star" id="red-star">
+          <img src="css/img/share.png" alt="share" class="share" id="share">
+          <img src="css/img/complain.png" alt="complain" class="complain" id="complain">
+          <span id="show-all-second">Показать все <span>208</span> комментариев</span><span id="show-more-second"> ></span>
+          </div>
+          <div id="second-post-followers">
+            <span id="spf-sign">За темой следят</span>
+            <img src="css/img/man-5.png" alt="follower" class="spf-img">
+            <img src="css/img/man-4.png" alt="follower" class="spf-img">
+            <img src="css/img/man-1.png" alt="follower" class="spf-img">
+            <img src="css/img/titov.png" alt="follower" class="spf-img">
+            <img src="css/img/man-3.png" alt="follower" class="spf-img">
+            <img src="css/img/man-2.png" alt="follower" class="spf-img">
+            <span id="spf-more">></span>
+          </div>
+        </header>
+        <div class="comment">
+          <img src="css/img/delete.png" alt="delete" class="delete-comment">
+          <p class="comment-author">Низовцев Вячеслав Иванович</p><span class="author-status">(Ответственный депутат)</span>
+          <p class="comment-text">Пришло сообщение из Префектуры на электронную почту - что гаражи подлежат
+            сносу, дело передано на рассмотрение в МВД и Управу Фили-давыдково, что они
+            собираются искать владельцев этих гаражей.</p>
+          <footer class="comment-footer">
+            <span class="ago">3 часа назад</span>
+            <div class="reply-comment">Ответить</div>
+            <div class="comment-likes-block">
+              <img src="css/img/like.png" alt="like" class="comment-likes"><span class="comment-likes-qnt">5</span>
+              <img src="css/img/dislike.png" alt="dislike" class="comment-dislikes"><span class="comment-dislikes-qnt">0</span>
+              <img src="css/img/complain.png" alt="complain" class="complain">
+            </div>
+          </footer>
+        </div>
+        <div class="comment">
+          <img src="css/img/delete.png" alt="delete" class="delete-comment">
+          <p class="comment-author">Сергей Титов</p>
+          <p class="comment-text">Обжаловал бездействие органов власти, направив обращение в Прокуратуру.</p>
+          <footer class="comment-footer">
+            <span class="ago">40 минут назад</span>
+            <div class="reply-comment">Ответить</div>
+            <div class="reply-input">
+              <img src="css/img/man-3.png" alt="man" id="reply-user">
+              <input type="text" id="reply-input" placeholder="Ответить...">
+            </div>
+            <div class="comment-likes-block">
+              <img src="css/img/like.png" alt="like" class="comment-likes"><span class="comment-likes-qnt">10</span>
+              <img src="css/img/dislike.png" alt="dislike" class="comment-dislikes"><span class="comment-dislikes-qnt">2</span>
+              <img src="css/img/complain.png" alt="complain" class="complain">
+            </div>
+          </footer>
+        </div>
+        <div class="comment">
+          <img src="css/img/delete.png" alt="delete" class="delete-comment">
+          <p class="comment-author">Юрист</p>
+          <p class="comment-text">Согласно статье 7.1. КоАП РФ «Самовольное занятие земельного участка»,
+            самовольное занятие земельного участка или использование земельного участка
+            без оформленных в установленном порядке правоустанавливающих документов
+            на землю, а в случае необходимости без документов, разрешающих осуществление
+            хозяйственной деятельности, влечет наложение административного штрафа на
+            граждан в размере от пятисот до одной тысячи рублей; на должностных лиц...
+          </p>
+          <footer class="comment-footer">
+            <span class="ago">13 минут назад</span>
+            <div class="reply-comment">Ответить</div>
+            <div class="comment-likes-block">
+              <img src="css/img/like.png" alt="like" class="comment-likes"><span class="comment-likes-qnt">26</span>
+              <img src="css/img/dislike.png" alt="dislike" class="comment-dislikes"><span class="comment-dislikes-qnt">0</span>
+              <img src="css/img/complain.png" alt="complain" class="complain">
+            </div>
+            <div id="answer">
+              <img src="css/img/man-3.png" alt="man" id="answer-user-pic">
+              <div id="answer-text-block">
+                <p id="answer-user-name">Сергей Титов</p>
+                <p id="answer-user-text">По настоящему богатый никогда не покажет, что он богат,
+                  а вот не очень — обязательно… с умом дела обстоят так же…</p>
+              </div>
+              <footer id="answer-footer">
+                <span class="ago">13 минут назад</span>
+                <div class="reply-answer">Ответить</div>
+                <div class="answer-likes-block">
+                  <img src="css/img/like.png" alt="like" class="comment-likes"><span class="answer-likes-qnt">10</span>
+                  <img src="css/img/dislike.png" alt="dislike" class="comment-dislikes"><span class="answer-dislikes-qnt">2</span>
+                  <img src="css/img/complain.png" alt="complain" class="complain">
+                </div>
+              </footer>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+      <div class="post" id="third">
+        <div class="post-head">
+          <div class="post-info">
+            <img src="css/img/titov.png" alt="Сергей Титов" class="post-author-pic">
+            <div class="post-author-textblock">
+              <span class="post-author-name">Сергей Титов</span>
+            </div>
+            <div class="post-other">
+              <span class="post-date">25.07.2015</span>
+              <img src="css/img/planet.png" alt="planet" class="planet">
+            </div>
+            <div class="post-arrow">
+              V
+            </div>
+          </div>
+        </div>
+        <div class="post-text">
+          <span>Территория принадлежит ОАО Ростелеком</span>, захватчиком является председатель
+          ГСК Авто-Новатор.Также была захвачена часть территории принадлежащая...
+        </div>
+        <div class="post-photos">
+          <img src="css/img/ostrich.png" alt="ostrich" class="second-post-photo">
+<!--          <img src="" alt="video" class="second-post-photo" id="video">-->
+<!--          <img src="" alt="video play" id="video-play">-->
+<!--          <img src="" alt="video time" id="video-time">-->
+<!--         Здесь сделать div с бэкграундом вемсто простого img-->
+          <img src="css/img/ipad.png" alt="ipad" class="second-post-photo">
+          <img src="css/img/ipad-2.png" alt="ipad" class="second-post-photo">
+          <img src="css/img/penguin.png" alt="penguin on a bike" class="second-post-photo">
+          <img src="css/img/mountain.png" alt="mountain" class="second-post-photo">
+          <img src="css/img/bridge.png" alt="bridge" class="second-post-photo">
+        </div>
+        <div class="likes-section">
+          <img src="css/img/star-blue.png" alt="blue star" class="blue-star">
+          <img src="css/img/share.png" alt="share" class="share">
+          <img src="css/img/complain.png" alt="complain" class="complain">
+          <span class="no-comments">Всего <span>0</span> комментариев</span>
+          <img src="css/img/like.png" alt="like" class="like"><span class="likes-qnt">15</span>
+          <img src="css/img/dislike.png" alt="dislike" class="dislike"><span class="dislikes-qnt">3</span>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+      <div class="post" id="fourth">
+        <div class="post-head">
+          <div class="post-info">
+            <img src="css/img/man-3.png" alt="Павел Пономарёв" class="post-author-pic">
+            <div class="post-author-textblock">
+              <span class="post-author-name">Павел Пономарёв</span>
+            </div>
+            <div class="post-other">
+              <span class="post-date">25.07.2015</span>
+              <img src="css/img/planet.png" alt="planet" class="planet">
+            </div>
+            <div class="post-arrow">
+              V
+            </div>
+          </div>
+        </div>
+        <div id="auiopost">
+<img id="play-audio" alt="play" src="css/img/play-audio.png">
+          <span id="singer">Sons of Maria</span><span id="song"> - Whatever you want to be (Original Mix)</span><span id="duration">5:07</span>
+          </div>
+
+        <div class="likes-section">
+          <img src="css/img/star-blue.png" alt="blue star" class="blue-star">
+          <img src="css/img/share.png" alt="share" class="share">
+          <img src="css/img/complain.png" alt="complain" class="complain">
+          <span class="no-comments">Всего <span>0</span> комментариев</span>
+          <img src="css/img/like.png" alt="like" class="like"><span class="likes-qnt">15</span>
+          <img src="css/img/dislike.png" alt="dislike" class="dislike"><span class="dislikes-qnt">3</span>
+        </div>
+          <div class="comment-input-block">
+
+            <input type="text" class="comment-input" placeholder="Комментировать...">
+
+          </div>
+      </div>
+
+
+
+
+
+
+
+      <div class="post" id="fifth">
+        <div class="post-head">
+          <div class="post-info">
+            <img src="css/img/man-3.png" alt="Павел Пономарёв" class="post-author-pic">
+            <div class="post-author-textblock">
+              <span class="post-author-name">Павел Пономарёв</span>
+            </div>
+            <div class="post-other">
+              <span class="post-date">25.07.2015</span>
+              <img src="css/img/planet.png" alt="planet" class="planet">
+            </div>
+            <div class="post-arrow">
+              V
+            </div>
+          </div>
+        </div>
+        <div id="attachment">
+          <img id="document" alt="docuemnt" src="css/img/document.png">
+          <span id="document-name">Тех требование NomerDoma.docx</span>
+        </div>
+
+        <div class="likes-section">
+          <img src="css/img/star-blue.png" alt="blue star" class="blue-star">
+          <img src="css/img/share.png" alt="share" class="share">
+          <img src="css/img/complain.png" alt="complain" class="complain">
+          <span class="no-comments">Всего <span>0</span> комментариев</span>
+          <img src="css/img/like.png" alt="like" class="like"><span class="likes-qnt">15</span>
+          <img src="css/img/dislike.png" alt="dislike" class="dislike"><span class="dislikes-qnt">3</span>
+        </div>
+        <div class="comment-input-block">
+
+          <input type="text" class="comment-input" placeholder="Комментировать...">
+
+        </div>
+      </div>
+
+    <div class="post" id="sixth">
+      <div class="post-head">
+        <div class="post-info">
+          <img src="css/img/man-3.png" alt="Павел Пономарёв" class="post-author-pic">
+          <div class="post-author-textblock">
+            <span class="post-author-name">Павел Пономарёв</span>
+          </div>
+          <div class="post-other">
+            <span class="post-date">25.07.2015</span>
+            <img src="css/img/planet.png" alt="planet" class="planet">
+          </div>
+          <div class="post-arrow">
+            V
+          </div>
+        </div>
+      </div>
+      <div id="vote">
+      <header id="vote-header">
+        <p id="vote-name">Открытое голосавние</p>
+        <p id="vote-topic">По данному адресу произошёл захват территории. Что будем делать?</p>
+      </header>
+        <div id="vote-variants">
+          <ul>
+            <li><input type="radio" name="meeting" checked>Устроить собрание жильцов</li>
+            <li><input type="radio" name="police">Написать заявление в полицию</li>
+            <li><input type="radio" name="whatever">Мне все равно</li>
+          </ul>
+        </div>
+        <div id="vote-results">
+<progress max="100" value="24.2">
+  12
+</progress>
+          <progress max="100" value="63.5">
+            33
+          </progress>
+          <progress max="100" value="12.3">
+            8
+          </progress>
+          <p id="voters">Проголосовало <span>53</span> человека</p>
+        </div>
+      </div>
+
+      <div class="likes-section">
+        <img src="css/img/star-blue.png" alt="blue star" class="blue-star">
+        <img src="css/img/share.png" alt="share" class="share">
+        <img src="css/img/complain.png" alt="complain" class="complain">
+        <span class="no-comments">Всего <span>0</span> комментариев</span>
+        <img src="css/img/like.png" alt="like" class="like"><span class="likes-qnt">15</span>
+        <img src="css/img/dislike.png" alt="dislike" class="dislike"><span class="dislikes-qnt">3</span>
+      </div>
+      <div class="comment-input-block">
+
+        <input type="text" class="comment-input" placeholder="Комментировать...">
+    <div id="comment-input-functions">
+      <div id="attachments">
+        <img src="css/img/file.png" alt="file" id="file">
+        <img src="css/img/foto.png" alt="foto" id="foto">
+        <img src="css/img/emoji.png" alt="emoji" id="emoji">
+      </div>
+      <button type="button">Отправить</button>
+    </div>
+      </div>
+    </div>
 
   </section>
   <aside>
-
+<div class="aside-header">
+  <div class="review">Обзор</div>
+  <div class="who-is-who">Кто есть кто</div>
+  <div class="about">О доме</div>
+  <div class="services">Услуги</div>
+</div>
   </aside>
 </main>
 </body>

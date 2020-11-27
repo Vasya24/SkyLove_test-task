@@ -1,3 +1,9 @@
+$inactive: #9A9FA0;
+
+html {
+  width: 2560px;
+}
+
 @font-face {
   font-family: NerisBlack;
   src: url('Fonts/neris-black-webfont.ttf');
@@ -39,32 +45,32 @@
 }
 
 @font-face {
-  font-family: 'OpenSansItalic';
+  font-family: OpenSansItalic;
   src: url('Fonts/OpenSans-Italic.ttf')
 }
 
 @font-face {
-  font-family: 'OpenSansLight';
+  font-family: OpenSansLight;
   src: url('Fonts/OpenSans-Light.ttf')
 }
 
 @font-face {
-  font-family: 'OpenSansLightItalic';
+  font-family: OpenSansLightItalic;
   src: url('Fonts/OpenSans-LightItalic.ttf')
 }
 
 @font-face {
-  font-family: 'OpenSansRegular';
+  font-family: OpenSansRegular;
   src: url('Fonts/OpenSans-Regular.ttf')
 }
 
 @font-face {
-  font-family: 'OpenSansSemibold';
+  font-family: OpenSansSemibold;
   src: url('Fonts/OpenSans-Semibold.ttf')
 }
 
 @font-face {
-  font-family: 'OpenSansSemiboldItalic';
+  font-family: OpenSansSemiboldItalic;
   src: url('Fonts/OpenSans-SemiboldItalic.ttf')
 }
 
@@ -79,6 +85,11 @@ ul {
 
 body {
   background-color: #EEF2F5;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
 }
 
 .header {
@@ -101,9 +112,6 @@ body {
     background-color: #3D5C84;
     position: relative;
 
-    //&-pic {
-    //
-    //}
   }
   .district {
     width: 5.43%;
@@ -120,7 +128,7 @@ body {
   .functions-block {
     position: relative;
     width: 13.75%;
-    height: 56px;
+    height: auto;
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
@@ -142,11 +150,12 @@ body {
 .under-header {
   position: relative;
   width: 100%;
-  height: 80px;
+  height: auto;
   filter: drop-shadow(0px 1px 1px rgba(0,0,1,0.1));
   background-color: #fff;
   display: flex;
   flex-direction: row;
+  margin-bottom: 30px;
   .address-dropdown {
     width: 17.97%;
     position: relative;
@@ -162,5 +171,359 @@ body {
   }
 }
 
+.posts-section {
+  position: relative;
+  width: 730px;
+  margin-left: 681px;
+  background-color: #fff;
+  overflow: hidden;
+  .top-marks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 51px;
+    max-width: 100%;
+    background-color: #EEF2F5;
+    border-bottom: 2px solid #5DA2D5;
+      .mark-box {
+        height: 100%;
+        text-align: center;
+        padding-top: 14px;
+        background-color: #EEF2F5;
+        color: #77889d;
+        box-sizing: border-box;
+        border: 1px solid #D8DCDF;
+        border-bottom: none;
+        font-size: 15px;
+        line-height: 22px;
+        font-family: NerisSemibold;
+        cursor: pointer;
+        filter: drop-shadow(0px 1px 0px rgba(0,0,1,0.21));
+        &.selected {
+          background-color: #5DA2D5;
+          color: #fff
+        }
+    }
+    #news-mark, #questions-mark  {
+      width: 119px;
+    }
+    #ads-mark {
+      width: 147px;
+    }
+    #events-mark {
+      width: 155px;
+    }
+    #reports-mark {
+      width: 108px;
+    }
+    #others-mark {
+      width: 58px;
+      padding-top: 15px;
+      padding-left: 19px;
+      hr {
+        width: 20px;
+        height: 2px;
+        background-color: #77879E;
+        border: none;
+        filter: drop-shadow(0px 1px 0.5px rgba(33,50,70,0.18));
+        margin-top: 4px;
+      }
+    }
+  }
+  .posts-top-wrapper {
+    height: 51px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 27px;
+    border-bottom: 1px solid #E3E3E3;
+    .posts-menu {
+      display: flex;
+      flex-direction: row;
+      box-sizing: border-box;
+      padding-left: 20px;
+      justify-content: space-between;
+
+      &-item {
+        font-size: 14px;
+        line-height: 25px;
+        text-align: center;
+        margin-right: 20px;
+        padding-top: 14px;
+        color: #77889d;
+        font-family: NerisSemibold;
+
+        &.selected {
+          border-bottom: 4px solid #5DA1D5;
+          color: #5ca2d3;
+        }
+      }
+    }
+    .sources {
+      font-size: 14px;
+      line-height: 25px;
+      color: #77889d;
+      padding-top: 14px;
+      font-family: NerisSemibold;
+      position: relative;
+      left: 70px;
+    }
+    .add-post {
+      width: 128px;
+      height: 34px;
+      background-color: #97a5b5;
+      border: .1px solid #97a5b5;
+      border-radius: 5px;
+      margin-top: 10px;
+      color: #ffffff;
+      font-size: 14px;
+      line-height: 22px;
+      font-family: NerisSemibold;
+      filter: drop-shadow(0px 1px 0px rgba(0,0,1,0.39));
+      position: relative;
+      right: 9px;
+    }
+  }
+  #first {
+    padding-left: 25px;
+    padding-right: 25px;
+    .post-head {
+      display: flex;
+      flex-direction: row;
+      .post-author-pic {
+        border-radius: 50%;
+        width: 67px;
+        height: 68px;
+      }
+      .post-info {
+        display: flex;
+        flex-direction: column;
+        margin-left: 23px;
+          .post-author-name {
+            font-size: 16px;
+            line-height: 22px;
+            color: #6789a3;
+            font-family: NerisSemibold;
+            margin-bottom: 17px;
+            width: 188px;
+          }
+          .post-author-status {
+            font-size: 16px;
+            line-height: 24px;
+            color: #97a5b5;
+            font-family: NerisSemibold;
+          }
+
+          .post-date {
+            font-size: 12px;
+            line-height: 22px;
+            color: #8d8d8d;
+            font-family: OpenSansSemiboldItalic;
+            &:after {
+              content: '';
+              display: inline-block;
+              margin-left: 14px;
+              width: 19px;
+              height: 19px;
+              background-image: url('img/planet.png');
+            }
+          }
+
+        }
+      .arrow {
+        margin-left: 379px;
+      }
+      }
+      .post-photos {
+        width: 680px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .ruins:nth-child(1) {
+          margin-bottom: 6px;
+          overflow: hidden;
+        }
+        .ruins:nth-child(n+2) img {
+          width: 337px;
+          height: 240px;
+        }
+        .ruins:nth-child(3) {
+          margin-left: 6px;
+        }
+      }
+      .arrow {
+        width: 24px;
+        height: 24px;
+      }
+    .post-header {
+      font-size: 20px;
+      line-height: 22px;
+      margin-top: 29px;
+      margin-bottom: 13px;
+      color: #5f7fa6;
+      font-family: OpenSansSemibold;
+      margin-left: 90px;
+    }
+    .post-text {
+      font-size: 17px;
+      line-height: 28px;
+      margin-left: 90px;
+      margin-bottom: 27px;
+      color: #686868;
+      font-family: NerisSemibold;
+
+    }
+    .post-geo {
+      margin-left: 90px;
+      margin-bottom: 30px;
+      font-size: 17px;
+      line-height: 28px;
+      color: #686868;
+      font-family: NerisSemibold;
+      .geo-address {
+        color: #77889E;
+      }
+    }
+    .likes-section {
+      height: 54px;
+      .share {
+        margin-right: 28px;
+      }
+      .watch {
+        margin-right: 16px;
+      }
+      .watch-text {
+        font-size: 13px;
+        line-height: 22px;
+        margin-bottom: 10px;
+        color: #848282;
+        margin-right: 13px;
+        font-family: OpenSansItalic;
+        span:nth-child(1) {
+          color: #77CE5A;
+        }
+      }
+      .watch-user {
+        width: 30px;
+        height: 30px;
+      }
+      .more-users {
+        margin-left: 10px;
+        margin-right: 62px;
+      }
+        .likes-qnt {
+          font-size: 14px;
+          line-height: 22px;
+          color: #6789a3;
+          font-family: NerisSemibold;
+          margin-right: 25px;
+        }
+        .dislikes-qnt {
+          font-size: 14px;
+          line-height: 22px;
+          color: #6789a3;
+          font-family: NerisSemibold;
+        }
+
+    }
+    .comments-section {
+      header {
+        height: 46px;
+        box-sizing: border-box;
+        border-bottom: 1px solid #DADEDF;
+        border-top: 1px solid #DADEDF;
+        text-align: center;
+        background-color: #F6F6F6;
+        margin-right: -24px;
+        margin-left: -24px;
+        padding-top: 10px;
+        font-size: 14px;
+        line-height: 22px;
+        color: #686868;
+        font-family: OpenSansRegular;
+        span {
+          color: #77CE5A;
+        }
+      }
+      .comment {
+        .delete-comment {
+          position: relative;
+          top: 16px;
+          left: 662px;
+        }
+        .comment-info {
+          display: flex;
+          flex-direction: row;
+          .comment-author-pic {
+            border-radius: 50%;
+            width: 59px;
+            height: 53px;
+            background-image: url("img/man-3.png");
+            background-size: 130%;
+            background-position: center;
+            margin-right: 17px;
+          }
+          .comment-author {
+            font-size: 14px;
+            line-height: 22px;
+            color: #6789a3;
+            font-family: NerisSemibold;
+            span {
+              color: #97A5B6;
+            }
+          }
+
+        }
+        .comment-text {
+          margin-left: 76px;
+          margin-top: -16px;
+          max-width: 521px;
+          font-size: 13px;
+          line-height: 22px;
+          color: #686868;
+          font-family: OpenSansRegular;
+        }
+        footer {
+          display: flex;
+          flex-direction: row;
+          margin-left: 76px;
+          margin-top: 32px;
+          .ago {
+            font-size: 12px;
+            line-height: 22px;
+            color: #8d9395;
+            font-family: OpenSansItalic;
+          }
+          table {
+            border-color: #ABB1B3;
+            height: 8px;
+            margin-left: 13px;
+            margin-right: 12px;
+            margin-top: 8px;
+          }
+          .reply-comment {
+            font-size: 12px;
+            line-height: 22px;
+            color: #6789a3;
+            font-family: OpenSansItalic;
+            margin-right: 331px;
+          }
+          .comment-likes-block {
+            .comment-likes {
+              filter: grayscale(50%);
+            }
+          }
+        }
+      }
+    }
+    }
+  }
+
+
+aside {
+  width: 17.58%;
+  margin-left: 0.66%;
+  background-color: #fff;
+}
 
 
