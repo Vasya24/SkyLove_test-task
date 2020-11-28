@@ -19,9 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="248b1499-cf33-44ba-9360-b183986641cd" name="Default Changelist" comment="A lot of things done. I'm going to sleep.">
+    <list default="true" id="248b1499-cf33-44ba-9360-b183986641cd" name="Default Changelist" comment="Header done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/img/logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
     </list>
@@ -88,7 +87,7 @@
       <workItem from="1606382853843" duration="8478000" />
       <workItem from="1606400720278" duration="5278000" />
       <workItem from="1606456308510" duration="25730000" />
-      <workItem from="1606542388135" duration="19536000" />
+      <workItem from="1606542388135" duration="22776000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1606056251726</created>
@@ -139,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606504237617</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Header done">
+      <created>1606587987278</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1606587987278</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,7 +171,8 @@
     <MESSAGE value="Section done. Aside and modals left" />
     <MESSAGE value="Done for today" />
     <MESSAGE value="A lot of things done. I'm going to sleep." />
-    <option name="LAST_COMMIT_MESSAGE" value="A lot of things done. I'm going to sleep." />
+    <MESSAGE value="Header done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Header done" />
   </component>
   <component name="WindowStateProjectService">
     <state x="400" y="268" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606142064272">
@@ -180,10 +187,10 @@
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state x="230" y="130" key="SettingsEditor/0.25.1440.875@0.25.1440.875" timestamp="1606124670872" />
-    <state x="320" y="199" key="Vcs.Push.Dialog.v2" timestamp="1606504243407">
+    <state x="320" y="199" key="Vcs.Push.Dialog.v2" timestamp="1606587993181">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state x="320" y="199" key="Vcs.Push.Dialog.v2/0.25.1440.875@0.25.1440.875" timestamp="1606504243407" />
+    <state x="320" y="199" key="Vcs.Push.Dialog.v2/0.25.1440.875@0.25.1440.875" timestamp="1606587993181" />
     <state x="521" y="380" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606328050525">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
