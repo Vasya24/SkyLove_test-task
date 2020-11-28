@@ -93,58 +93,164 @@ main {
 }
 
 .header {
-  //position: fixed;
   background-color: #527199;
   width: 100%;
   height: 70px;
   display: flex;
   flex-direction: row;
+  padding-left: 608px;
+  .burger {
+    position: relative;
+    top: 26px;
+    width: 25px;
+    height: 16px;
+    hr {
+      height: 2px;
+      filter: drop-shadow(0px 1px 0px rgba(0,0,1,0.15));
+      background-color: #ffffff;
+    }
+    hr:nth-child(2) {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  }
   .logo-box {
     display: flex;
     flex-direction: row;
     position: relative;
-    width: 9.57%;
+    width: 245px;
     height: 51px;
     margin-top: 10px;
+    margin-right: 115px;
+    .logo-box-picture {
+      margin-left: 46px;
+      margin-right: 10px;
+    }
+    .logo-box-text {
+      .nomerdoma {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: 8px;
+        .nomer {
+          filter: drop-shadow(0px 1px 0px rgba(0,0,1,0.17));
+        }
+      }
+      p {
+        width: 100%;
+        font-size: 8px;
+        letter-spacing: 10px;
+        line-height: 27px;
+        color: #b7c5d4;
+        font-family: NerisSemibold;
+        filter: drop-shadow(0px 1px 0px rgba(0,0,1,0.14));
+      }
+    }
   }
-  .home {
-    width: 3.59%;
-    background-color: #3D5C84;
-    position: relative;
-
-  }
-  .district {
-    width: 5.43%;
+  .top-box {
     background-color: #5F7FA7;
-    position: relative;
-
+    & .active {
+      background-color: #3D5C84;
+    }
   }
-  .city {
-    width: 5.47%;
+  #home, #district, #city {
+    box-sizing: border-box;
+    border-left: 1px solid #728FB2;
+    border-right: 1px solid #728FB2;
+    border-collapse: collapse;
     background-color: #5F7FA7;
+    font-size: 17px;
+    line-height: 22px;
+    color: #d3ebfe;
+    font-family: NerisSemibold;
+    filter: drop-shadow(0px 1px 0px rgba(0,0,1,0.24));
+    text-align: center;
+  }
+  #home {
+    width: 92px;
     position: relative;
-
+    #home-pic {
+      padding-top: 23px;
+    }
+  }
+  #district {
+    width: 139px;
+    font-size: 17px;
+    line-height: 22px;
+    color: #d3ebfe;
+    font-family: NerisSemibold;
+    filter: drop-shadow(0px 1px 0px rgba(0,0,1,0.24));
+    text-align: center;
+    padding-top: 18px;
+  }
+  #city {
+    width: 140px;
+    padding-top: 18px;
   }
   .functions-block {
     position: relative;
-    width: 13.75%;
-    height: auto;
-    margin-top: 10px;
+    width: 352px;
+    left: 27px;
+    margin-top: 7px;
+    margin-right: 15px;
     display: flex;
     justify-content: space-between;
     .function {
       position: relative;
-      width: 21.02%;
-      height: 100%;
+      width: 56px;
+      height: 56px;
       border-radius: 50%;
       background-color: #5B7BA2;
       &-icon {
-        position: relative;
-        margin: 50%;
+        margin-top: 30%;
+        margin-left: 30%
+      }
+      &.active {
+        background-color: #5CA1D5;
+      }
+      &.mail {
+        .inbox-qnt {
+          display: block;
+          width: 17px;
+          height: 16px;
+          background-color: #517198;
+          border-radius: 50%;
+          position: relative;
+          left: 40px;
+          z-index: 9;
+          font-size: 13px;
+          line-height: 12px;
+          color: #ffffff;
+          font-family: NerisBlack;
+          filter: drop-shadow(0px 1px 0px rgba(0,0,1,0.12));
+          padding-top: 5px;
+          text-align: center;
+        }
       }
     }
   }
-
+  #top-separator {
+    width: 34px;
+    height: 1px;
+    margin-top: 35px;
+    margin-right: 15px;
+    //border-color: #6383AB;
+    border: none;
+    background-color: #6383AB;
+    transform: rotateZ(90deg);
+  }
+  .current-user {
+    width: 56px;
+    height: 56px;
+    margin-top: 7px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 2px solid #B9C8DC;
+    background-image: url("img/man-3.png");
+    background-size: 170%;
+    background-position: center top;
+    padding-top: 10px;
+  }
 }
 
 .under-header {
@@ -175,8 +281,9 @@ main {
   position: relative;
   width: 730px;
   margin-left: 681px;
-  background-color: #fff;
+  background-color: #EEF2F5;
   overflow: hidden;
+
   .top-marks {
     display: flex;
     flex-direction: row;
@@ -185,58 +292,67 @@ main {
     max-width: 100%;
     background-color: #EEF2F5;
     border-bottom: 2px solid #5DA2D5;
-      .mark-box {
-        height: 100%;
-        text-align: center;
-        padding-top: 14px;
-        background-color: #EEF2F5;
-        color: #77889d;
-        box-sizing: border-box;
-        border: 1px solid #D8DCDF;
-        border-bottom: none;
-        font-size: 15px;
-        line-height: 22px;
-        font-family: NerisSemibold;
-        cursor: pointer;
-        filter: drop-shadow(0px 1px 0px rgba(0,0,1,0.21));
-        &.selected {
-          background-color: #5DA2D5;
-          color: #fff
-        }
+
+    .mark-box {
+      height: 100%;
+      text-align: center;
+      padding-top: 14px;
+      background-color: #EEF2F5;
+      color: #77889d;
+      box-sizing: border-box;
+      border: 1px solid #D8DCDF;
+      border-bottom: none;
+      font-size: 15px;
+      line-height: 22px;
+      font-family: NerisSemibold;
+      cursor: pointer;
+      filter: drop-shadow(0px 1px 0px rgba(0, 0, 1, 0.21));
+
+      &.selected {
+        background-color: #5DA2D5;
+        color: #fff
+      }
     }
-    #news-mark, #questions-mark  {
+
+    #news-mark, #questions-mark {
       width: 119px;
     }
+
     #ads-mark {
       width: 147px;
     }
+
     #events-mark {
       width: 155px;
     }
+
     #reports-mark {
       width: 108px;
     }
+
     #others-mark {
       width: 58px;
       padding-top: 15px;
       padding-left: 19px;
+
       hr {
         width: 20px;
         height: 2px;
         background-color: #77879E;
         border: none;
-        filter: drop-shadow(0px 1px 0.5px rgba(33,50,70,0.18));
+        filter: drop-shadow(0px 1px 0.5px rgba(33, 50, 70, 0.18));
         margin-top: 4px;
       }
     }
   }
+
   .posts-top-wrapper {
     height: 51px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 27px;
     border-bottom: 1px solid #E3E3E3;
+
     .posts-menu {
       display: flex;
       flex-direction: row;
@@ -259,6 +375,7 @@ main {
         }
       }
     }
+
     .sources {
       font-size: 14px;
       line-height: 25px;
@@ -268,6 +385,7 @@ main {
       position: relative;
       left: 70px;
     }
+
     .add-post {
       width: 128px;
       height: 34px;
@@ -279,82 +397,107 @@ main {
       font-size: 14px;
       line-height: 22px;
       font-family: NerisSemibold;
-      filter: drop-shadow(0px 1px 0px rgba(0,0,1,0.39));
+      filter: drop-shadow(0px 1px 0px rgba(0, 0, 1, 0.39));
       position: relative;
       right: 9px;
     }
   }
+
+  .post {
+    box-sizing: border-box;
+    padding-top: 27px;
+    background-color: #fff;
+    border-left: 1px solid #D5DBE0;
+    border-bottom: 1px solid #D5DBE0;
+    border-right: 1px solid #D5DBE0;
+  }
+
+  .post:nth-child(2n) {
+    margin-top: 19px;
+    border-top: 2px solid #BAC8DA;
+  }
+
   #first {
     padding-left: 25px;
     padding-right: 25px;
+
     .post-head {
       display: flex;
       flex-direction: row;
+
       .post-author-pic {
         border-radius: 50%;
         width: 67px;
         height: 68px;
       }
+
       .post-info {
         display: flex;
         flex-direction: column;
         margin-left: 23px;
-          .post-author-name {
-            font-size: 16px;
-            line-height: 22px;
-            color: #6789a3;
-            font-family: NerisSemibold;
-            margin-bottom: 17px;
-            width: 188px;
-          }
-          .post-author-status {
-            font-size: 16px;
-            line-height: 24px;
-            color: #97a5b5;
-            font-family: NerisSemibold;
-          }
 
-          .post-date {
-            font-size: 12px;
-            line-height: 22px;
-            color: #8d8d8d;
-            font-family: OpenSansSemiboldItalic;
-            &:after {
-              content: '';
-              display: inline-block;
-              margin-left: 14px;
-              width: 19px;
-              height: 19px;
-              background-image: url('img/planet.png');
-            }
-          }
-
+        .post-author-name {
+          font-size: 16px;
+          line-height: 22px;
+          color: #6789a3;
+          font-family: NerisSemibold;
+          margin-bottom: 17px;
+          width: 188px;
         }
+
+        .post-author-status {
+          font-size: 16px;
+          line-height: 24px;
+          color: #97a5b5;
+          font-family: NerisSemibold;
+        }
+
+        .post-date {
+          font-size: 12px;
+          line-height: 22px;
+          color: #8d8d8d;
+          font-family: OpenSansSemiboldItalic;
+
+          &:after {
+            content: '';
+            display: inline-block;
+            margin-left: 14px;
+            width: 19px;
+            height: 19px;
+            background-image: url('img/planet.png');
+          }
+        }
+
+      }
+
       .arrow {
         margin-left: 379px;
-      }
-      }
-      .post-photos {
-        width: 680px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        .ruins:nth-child(1) {
-          margin-bottom: 6px;
-          overflow: hidden;
-        }
-        .ruins:nth-child(n+2) img {
-          width: 337px;
-          height: 240px;
-        }
-        .ruins:nth-child(3) {
-          margin-left: 6px;
-        }
-      }
-      .arrow {
         width: 24px;
         height: 24px;
       }
+    }
+
+    .post-photos {
+      width: 680px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      .ruins:nth-child(1) {
+        margin-bottom: 6px;
+        overflow: hidden;
+      }
+
+      .ruins:nth-child(n+2) img {
+        width: 337px;
+        height: 240px;
+      }
+
+      .ruins:nth-child(3) {
+        margin-left: 6px;
+      }
+    }
+
     .post-header {
       font-size: 20px;
       line-height: 22px;
@@ -364,6 +507,7 @@ main {
       font-family: OpenSansSemibold;
       margin-left: 90px;
     }
+
     .post-text {
       font-size: 17px;
       line-height: 28px;
@@ -373,6 +517,7 @@ main {
       font-family: NerisSemibold;
 
     }
+
     .post-geo {
       margin-left: 90px;
       margin-bottom: 30px;
@@ -380,18 +525,23 @@ main {
       line-height: 28px;
       color: #686868;
       font-family: NerisSemibold;
+
       .geo-address {
         color: #77889E;
       }
     }
+
     .likes-section {
       height: 54px;
+
       .share {
         margin-right: 28px;
       }
+
       .watch {
         margin-right: 16px;
       }
+
       .watch-text {
         font-size: 13px;
         line-height: 22px;
@@ -399,33 +549,39 @@ main {
         color: #848282;
         margin-right: 13px;
         font-family: OpenSansItalic;
+
         span:nth-child(1) {
           color: #77CE5A;
         }
       }
+
       .watch-user {
         width: 30px;
         height: 30px;
       }
+
       .more-users {
         margin-left: 10px;
         margin-right: 62px;
       }
-        .likes-qnt {
-          font-size: 14px;
-          line-height: 22px;
-          color: #6789a3;
-          font-family: NerisSemibold;
-          margin-right: 25px;
-        }
-        .dislikes-qnt {
-          font-size: 14px;
-          line-height: 22px;
-          color: #6789a3;
-          font-family: NerisSemibold;
-        }
+
+      .likes-qnt {
+        font-size: 14px;
+        line-height: 22px;
+        color: #6789a3;
+        font-family: NerisSemibold;
+        margin-right: 25px;
+      }
+
+      .dislikes-qnt {
+        font-size: 14px;
+        line-height: 22px;
+        color: #6789a3;
+        font-family: NerisSemibold;
+      }
 
     }
+
     .comments-section {
       header {
         height: 46px;
@@ -441,19 +597,23 @@ main {
         line-height: 22px;
         color: #686868;
         font-family: OpenSansRegular;
+
         span {
           color: #77CE5A;
         }
       }
+
       .comment {
         .delete-comment {
           position: relative;
           top: 16px;
           left: 662px;
         }
+
         .comment-info {
           display: flex;
           flex-direction: row;
+
           .comment-author-pic {
             border-radius: 50%;
             width: 59px;
@@ -463,17 +623,19 @@ main {
             background-position: center;
             margin-right: 17px;
           }
+
           .comment-author {
             font-size: 14px;
             line-height: 22px;
             color: #6789a3;
             font-family: NerisSemibold;
+
             span {
               color: #97A5B6;
             }
           }
-
         }
+
         .comment-text {
           margin-left: 76px;
           margin-top: -16px;
@@ -483,24 +645,31 @@ main {
           color: #686868;
           font-family: OpenSansRegular;
         }
+
         footer {
           display: flex;
           flex-direction: row;
           margin-left: 76px;
           margin-top: 32px;
+          padding-bottom: 5px;
+          border-bottom: 1px solid #DDE1E2;
+
           .ago {
             font-size: 12px;
             line-height: 22px;
             color: #8d9395;
             font-family: OpenSansItalic;
           }
+
           table {
-            border-color: #ABB1B3;
+            border: 1px solid #ABB1B3;
+            width: 1px;
             height: 8px;
             margin-left: 13px;
             margin-right: 12px;
             margin-top: 8px;
           }
+
           .reply-comment {
             font-size: 12px;
             line-height: 22px;
@@ -508,16 +677,485 @@ main {
             font-family: OpenSansItalic;
             margin-right: 331px;
           }
+
           .comment-likes-block {
             .comment-likes {
-              filter: grayscale(50%);
+              filter: grayscale(70%);
+              margin-right: 5px;
+            }
+
+            span {
+              font-size: 12px;
+              line-height: 15px;
+              color: #9a9fa0;
+              font-family: NerisSemibold;
+            }
+
+            .comment-dislikes {
+              filter: grayscale(70%);
+              margin-right: 5px;
+              margin-left: 5px;
+            }
+
+            .comment-complain {
+              margin-left: 5px;
+
+            }
+          }
+        }
+      }
+
+      .comment:nth-child(3) {
+        .comment-author-pic {
+          background-image: url('img/titov.png');
+          background-size: 100%;
+        }
+
+        .ago {
+          width: 110px;
+        }
+
+        table {
+          margin-left: 0;
+        }
+
+        .reply-comment {
+          margin-right: 300px;
+        }
+
+      }
+
+      .comment:nth-child(4) {
+        border-bottom: none;
+
+        .comment-author-pic {
+          background-image: url('img/man-1.png');
+          background-size: 100%;
+        }
+
+        footer {
+          display: flex;
+          flex-direction: column;
+
+          #third-comment-footer-wrapper {
+            display: flex;
+            flex-direction: row;
+
+            .ago {
+              width: 110px;
+            }
+
+            table {
+              margin-left: 0;
+            }
+
+            .reply-comment {
+              margin-right: 300px;
+            }
+          }
+
+          .comment-input-block {
+            display: flex;
+            flex-direction: row;
+
+            img {
+              position: absolute;
+              left: 24px;
+              width: 40px;
+              height: 40px;
+
+            }
+
+            input {
+              width: 100%;
+              height: 40px;
+              box-sizing: border-box;
+              border: 2px solid #dddddd;
+              font-size: 15px;
+              line-height: 30px;
+              color: #6789a3;
+              font-family: OpenSansItalic;
+              padding-left: 14px;
             }
           }
         }
       }
     }
+  }
+
+  #second {
+    padding-left: 25px;
+    padding-right: 25px;
+
+    .post-head {
+      display: flex;
+      flex-direction: row;
+
+      .post-author-pic {
+        border-radius: 50%;
+        width: 67px;
+        height: 68px;
+      }
+
+      .post-info {
+        display: flex;
+        flex-direction: column;
+        margin-left: 23px;
+
+        .post-author-name {
+          font-size: 16px;
+          line-height: 22px;
+          color: #6789a3;
+          font-family: NerisSemibold;
+          margin-bottom: 17px;
+          width: 188px;
+        }
+
+        .post-author-status {
+          font-size: 16px;
+          line-height: 24px;
+          color: #97a5b5;
+          font-family: NerisSemibold;
+        }
+
+        .post-date {
+          font-size: 12px;
+          line-height: 22px;
+          color: #8d8d8d;
+          font-family: OpenSansSemiboldItalic;
+
+          &:after {
+            content: '';
+            display: inline-block;
+            margin-left: 14px;
+            width: 19px;
+            height: 19px;
+            background-image: url('img/planet.png');
+          }
+        }
+
+      }
+
+      .arrow {
+        margin-left: 379px;
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    .post-text {
+      display: flex;
+      flex-direction: row;
+      margin-left: 83px;
+      margin-top: 26px;
+      margin-bottom: 35px;
+
+      .repost-pic {
+        width: 42px;
+        height: 41px;
+        border-radius: 50%;
+        margin-right: 12px;
+      }
+
+      .repost-icon {
+        width: 15px;
+        height: 11px;
+        margin-right: 14px;
+      }
+
+      .repost-text {
+        position: relative;
+        bottom: 10px;
+        max-width: 500px;
+        font-size: 15px;
+        line-height: 28px;
+        color: #686868;
+        font-family: NerisLight;
+      }
+    }
+
+    .comments-section {
+      header {
+        height: 97px;
+        box-sizing: border-box;
+        border-bottom: 1px solid #DADEDF;
+        border-top: 1px solid #DADEDF;
+        text-align: center;
+        background-color: #F6F6F6;
+        margin-right: -24px;
+        margin-left: -24px;
+        padding-top: 10px;
+        font-size: 14px;
+        line-height: 22px;
+        color: #686868;
+        font-family: OpenSansRegular;
+
+        .red-star {
+          position: absolute;
+          left: 24px;
+        }
+
+        .share {
+          position: absolute;
+          left: 72px;
+          padding-top: 4px;
+        }
+
+        .complain {
+          position: absolute;
+          left: 120px;
+          padding-top: 4px;
+        }
+
+        .likes-wrapper {
+          display: flex;
+          flex-direction: row;
+          position: relative;
+          left: 600px;
+          bottom: 15px;
+          .like {
+            filter: grayscale(70%);
+            margin-right: 5px;
+          }
+
+          span {
+            font-size: 12px;
+            line-height: 15px;
+            color: #9a9fa0;
+            font-family: NerisSemibold;
+          }
+
+          .dislike {
+            filter: grayscale(70%);
+            margin-right: 5px;
+            margin-left: 5px;
+          }
+        }
+      }
+
+      #show-all-second {
+        span {
+          color: #77CE5A;
+        }
+      }
+
+        #second-post-followers {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          height: 52px;
+          background-color: #ffffff;
+          border-top: 1px solid #E6E9E9;
+          border-bottom: 1px solid #E6E9E9;
+          #spf-sign {
+            position: relative;
+            top: 13px;
+            margin-left: 25px;
+            margin-right: 16px;
+            font-size: 14px;
+            line-height: 22px;
+            color: #8d8d8d;
+            font-family: OpenSansItalic;
+          }
+          .spf-img {
+
+            position: relative;
+            top: 5px;
+            width: 45px;
+            height: 45px;
+            margin-right: 10px;
+          }
+          #spf-more {
+            position: relative;
+            top: 20px;
+            left: 200px;
+            width: 5px;
+            height: 8px;
+          }
+        }
+
+      .comment {
+        .delete-comment {
+          position: relative;
+          top: 16px;
+          left: 662px;
+        }
+
+        .comment-info {
+          display: flex;
+          flex-direction: row;
+
+          .comment-author-pic {
+            border-radius: 50%;
+            width: 59px;
+            height: 53px;
+            background-image: url("img/man-3.png");
+            background-size: 130%;
+            background-position: center;
+            margin-right: 17px;
+          }
+
+          .comment-author {
+            font-size: 14px;
+            line-height: 22px;
+            color: #6789a3;
+            font-family: NerisSemibold;
+
+            span {
+              color: #97A5B6;
+            }
+          }
+        }
+
+        .comment-text {
+          margin-left: 76px;
+          margin-top: -16px;
+          max-width: 521px;
+          font-size: 13px;
+          line-height: 22px;
+          color: #686868;
+          font-family: OpenSansRegular;
+        }
+
+        footer {
+          display: flex;
+          flex-direction: row;
+          margin-left: 76px;
+          margin-top: 32px;
+          padding-bottom: 5px;
+          border-bottom: 1px solid #DDE1E2;
+
+          .ago {
+            font-size: 12px;
+            line-height: 22px;
+            color: #8d9395;
+            font-family: OpenSansItalic;
+          }
+
+          table {
+            border: 1px solid #ABB1B3;
+            width: 1px;
+            height: 8px;
+            margin-left: 13px;
+            margin-right: 12px;
+            margin-top: 8px;
+          }
+
+          .reply-comment {
+            font-size: 12px;
+            line-height: 22px;
+            color: #6789a3;
+            font-family: OpenSansItalic;
+            margin-right: 331px;
+          }
+
+          .comment-likes-block {
+            .comment-likes {
+              filter: grayscale(70%);
+              margin-right: 5px;
+            }
+
+            span {
+              font-size: 12px;
+              line-height: 15px;
+              color: #9a9fa0;
+              font-family: NerisSemibold;
+            }
+
+            .comment-dislikes {
+              filter: grayscale(70%);
+              margin-right: 5px;
+              margin-left: 5px;
+            }
+
+            .comment-complain {
+              margin-left: 5px;
+
+            }
+          }
+        }
+      }
+
+
+      .comment:nth-child(3) {
+        .comment-author-pic {
+          background-image: url('img/titov.png');
+          background-size: 100%;
+        }
+
+        .ago {
+          width: 110px;
+        }
+
+        table {
+          margin-left: 0;
+        }
+
+        .reply-comment {
+          margin-right: 300px;
+        }
+
+      }
+
+      .comment:nth-child(4) {
+        border-bottom: none;
+
+        .comment-author-pic {
+          background-image: url('img/man-1.png');
+          background-size: 100%;
+        }
+
+        footer {
+          display: flex;
+          flex-direction: column;
+
+          #third-comment-footer-wrapper {
+            display: flex;
+            flex-direction: row;
+
+            .ago {
+              width: 110px;
+            }
+
+            table {
+              margin-left: 0;
+            }
+
+            .reply-comment {
+              margin-right: 300px;
+            }
+          }
+
+          .comment-input-block {
+            display: flex;
+            flex-direction: row;
+
+            img {
+              position: absolute;
+              left: 24px;
+              width: 40px;
+              height: 40px;
+
+            }
+
+            input {
+              width: 100%;
+              height: 40px;
+              box-sizing: border-box;
+              border: 2px solid #dddddd;
+              font-size: 15px;
+              line-height: 30px;
+              color: #6789a3;
+              font-family: OpenSansItalic;
+              padding-left: 14px;
+            }
+          }
+        }
+      }
     }
   }
+}
+
 
 
 aside {
