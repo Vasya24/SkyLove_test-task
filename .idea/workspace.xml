@@ -19,10 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="248b1499-cf33-44ba-9360-b183986641cd" name="Default Changelist" comment="Header done">
+    <list default="true" id="248b1499-cf33-44ba-9360-b183986641cd" name="Default Changelist" comment="UnderHeader done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/img/beauty.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/img/beauty.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +89,9 @@
       <workItem from="1606382853843" duration="8478000" />
       <workItem from="1606400720278" duration="5278000" />
       <workItem from="1606456308510" duration="25730000" />
-      <workItem from="1606542388135" duration="22776000" />
+      <workItem from="1606542388135" duration="31406000" />
+      <workItem from="1606640375037" duration="17086000" />
+      <workItem from="1606716608160" duration="7650000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1606056251726</created>
@@ -145,7 +149,21 @@
       <option name="project" value="LOCAL" />
       <updated>1606587987278</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="UnderHeader done">
+      <created>1606592273387</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1606592273387</updated>
+    </task>
+    <task id="LOCAL-00010" summary="First dropdown added">
+      <created>1606668582715</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1606668582715</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,7 +190,9 @@
     <MESSAGE value="Done for today" />
     <MESSAGE value="A lot of things done. I'm going to sleep." />
     <MESSAGE value="Header done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Header done" />
+    <MESSAGE value="UnderHeader done" />
+    <MESSAGE value="First dropdown added" />
+    <option name="LAST_COMMIT_MESSAGE" value="First dropdown added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="400" y="268" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606142064272">
@@ -187,21 +207,21 @@
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state x="230" y="130" key="SettingsEditor/0.25.1440.875@0.25.1440.875" timestamp="1606124670872" />
-    <state x="320" y="199" key="Vcs.Push.Dialog.v2" timestamp="1606587993181">
+    <state x="320" y="199" key="Vcs.Push.Dialog.v2" timestamp="1606668586093">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state x="320" y="199" key="Vcs.Push.Dialog.v2/0.25.1440.875@0.25.1440.875" timestamp="1606587993181" />
+    <state x="320" y="199" key="Vcs.Push.Dialog.v2/0.25.1440.875@0.25.1440.875" timestamp="1606668586093" />
     <state x="521" y="380" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606328050525">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state x="521" y="380" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1440.875@0.25.1440.875" timestamp="1606328050525" />
-    <state x="385" y="210" key="run.anything.popup" timestamp="1606386863981">
+    <state x="385" y="210" width="670" height="675" key="run.anything.popup" timestamp="1606665524941">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state x="385" y="210" key="run.anything.popup/0.25.1440.875@0.25.1440.875" timestamp="1606386863981" />
-    <state x="385" y="214" width="670" height="676" key="search.everywhere.popup" timestamp="1606119841997">
+    <state x="385" y="210" width="670" height="675" key="run.anything.popup/0.25.1440.875@0.25.1440.875" timestamp="1606665524941" />
+    <state x="385" y="214" width="670" height="676" key="search.everywhere.popup" timestamp="1606641992402">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state x="385" y="214" width="670" height="676" key="search.everywhere.popup/0.25.1440.875@0.25.1440.875" timestamp="1606119841997" />
+    <state x="385" y="214" width="670" height="676" key="search.everywhere.popup/0.25.1440.875@0.25.1440.875" timestamp="1606641992402" />
   </component>
 </project>
