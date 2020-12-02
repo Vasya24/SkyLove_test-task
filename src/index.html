@@ -308,7 +308,6 @@
       <div class="sources">Источники</div>
       <button type="button" class="add-post">Добавить</button>
     </div>
-
       <div class="post" id="first">
         <div class="post-head">
 
@@ -433,17 +432,7 @@
           </div>
         </div>
       </div>
-
-
-
-
-
-
-
-
-
-
-    <div class="post" id="second">
+      <div class="post" id="second">
       <div class="post-head">
 
         <img src="css/img/man-3.png" alt="user" class="post-author-pic">
@@ -497,6 +486,7 @@
 
           <footer class="comment-footer">
             <span class="ago">3 часа назад</span>
+            <table></table>
             <div class="reply-comment">Ответить</div>
             <div class="comment-likes-block">
               <img src="css/img/like.png" alt="like" class="comment-likes"><span class="comment-likes-qnt">5</span>
@@ -514,20 +504,29 @@
           </div>
           <p class="comment-text">Обжаловал бездействие органов власти, направив обращение в Прокуратуру.</p>
           <footer class="comment-footer">
+            <div class="comment-wrapper">
             <span class="ago">40 минут назад</span>
+              <table></table>
             <div class="reply-comment">Ответить</div>
+              <div class="comment-likes-block">
+                <img src="css/img/like.png" alt="like" class="comment-likes"><span class="comment-likes-qnt">10</span>
+                <img src="css/img/dislike.png" alt="dislike" class="comment-dislikes"><span class="comment-dislikes-qnt">2</span>
+                <img src="css/img/complain.png" alt="complain" class="complain">
+              </div>
+            </div>
             <div class="reply-input">
               <img src="css/img/man-3.png" alt="man" id="reply-user">
               <input type="text" id="reply-input" placeholder="Ответить...">
-            </div>
-            <div class="comment-likes-block">
-              <img src="css/img/like.png" alt="like" class="comment-likes"><span class="comment-likes-qnt">10</span>
-              <img src="css/img/dislike.png" alt="dislike" class="comment-dislikes"><span class="comment-dislikes-qnt">2</span>
-              <img src="css/img/complain.png" alt="complain" class="complain">
+              <div class="reply-func-wrapper">
+              <img src="css/img/add-photo.png" alt="add-photo">
+                <div id="enter">
+                <img src="css/img/enter.png" alt="enter">
+                </div>
+              </div>
             </div>
           </footer>
         </div>
-        <div class="comment">
+        <div class="comment" id="comment-with-reply">
           <img src="css/img/delete.png" alt="delete" class="delete-comment">
           <div class="comment-info">
             <div class="comment-author-pic" ></div>
@@ -541,8 +540,9 @@
             граждан в размере от пятисот до одной тысячи рублей; на должностных лиц...
           </p>
           <footer class="comment-footer">
-            <div id="comment-wrapper">
+            <div class="comment-wrapper">
             <span class="ago">13 минут назад</span>
+              <table></table>
             <div class="reply-comment">Ответить</div>
             <div class="comment-likes-block">
               <img src="css/img/like.png" alt="like" class="comment-likes"><span class="comment-likes-qnt">26</span>
@@ -551,103 +551,93 @@
             </div>
             </div>
             <div id="answer">
+              <img src="css/img/delete.png" alt="delete" id="delete-answer">
+              <header>
               <img src="css/img/man-3.png" alt="man" id="answer-user-pic">
               <div id="answer-text-block">
                 <p id="answer-user-name">Сергей Титов</p>
                 <p id="answer-user-text">По настоящему богатый никогда не покажет, что он богат,
                   а вот не очень — обязательно… с умом дела обстоят так же…</p>
               </div>
-              <footer id="answer-footer">
-                <span class="ago">13 минут назад</span>
-                <div class="reply-answer">Ответить</div>
-                <div class="answer-likes-block">
-                  <img src="css/img/like.png" alt="like" class="comment-likes"><span class="answer-likes-qnt">10</span>
-                  <img src="css/img/dislike.png" alt="dislike" class="comment-dislikes"><span class="answer-dislikes-qnt">2</span>
-                  <img src="css/img/complain.png" alt="complain" class="complain">
+              </header>
 
-                </div>
-              </footer>
             </div>
+            <footer id="answer-footer">
+              <span class="ago">40 минут назад</span>
+              <table></table>
+              <div class="reply-answer">Ответить</div>
+              <div class="answer-likes-block">
+                <img src="css/img/like.png" alt="like" class="comment-likes"><span class="answer-likes-qnt">10</span>
+                <img src="css/img/dislike.png" alt="dislike" class="comment-dislikes"><span class="answer-dislikes-qnt">2</span>
+                <img src="css/img/complain.png" alt="complain" class="complain">
+
+              </div>
+            </footer>
           </footer>
         </div>
+        <div class="comment-input-block">
+          <img class="input-user-pic" src="css/img/man-3.png" alt="user">
+          <input type="text" class="comment-input" placeholder="Комментировать...">
+
+        </div>
       </div>
+
     </div>
-
-
-
-
-
-
-
-
-
-
       <div class="post" id="third">
         <div class="post-head">
+
+          <img src="css/img/titov.png" alt="Сергей Титов" class="post-author-pic">
+
           <div class="post-info">
-            <img src="css/img/titov.png" alt="Сергей Титов" class="post-author-pic">
-            <div class="post-author-textblock">
-              <span class="post-author-name">Сергей Титов</span>
-            </div>
-            <div class="post-other">
-              <span class="post-date">25.07.2015</span>
-              <img src="css/img/planet.png" alt="planet" class="planet">
-            </div>
-            <div class="post-arrow">
-              V
-            </div>
+            <span class="post-author-name">Сергей Титов</span>
+            <span class="post-date">25.07.2015</span>
           </div>
+          <img src="css/img/arrow.png" alt="arrow down" class="arrow">
         </div>
         <div class="post-text">
           <span>Территория принадлежит ОАО Ростелеком</span>, захватчиком является председатель
           ГСК Авто-Новатор.Также была захвачена часть территории принадлежащая...
         </div>
         <div class="post-photos">
-          <img src="css/img/ostrich.png" alt="ostrich" class="second-post-photo">
-<!--          <img src="" alt="video" class="second-post-photo" id="video">-->
-<!--          <img src="" alt="video play" id="video-play">-->
-<!--          <img src="" alt="video time" id="video-time">-->
-<!--         Здесь сделать div с бэкграундом вемсто простого img-->
-          <img src="css/img/ipad.png" alt="ipad" class="second-post-photo">
-          <img src="css/img/ipad-2.png" alt="ipad" class="second-post-photo">
-          <img src="css/img/penguin.png" alt="penguin on a bike" class="second-post-photo">
-          <img src="css/img/mountain.png" alt="mountain" class="second-post-photo">
-          <img src="css/img/bridge.png" alt="bridge" class="second-post-photo">
+          <img src="css/img/ostrich.png" alt="ostrich" class="second-post-photo one">
+          <div class="second-post-photo two">
+                      <img src="css/img/video-play.png" alt="video play" id="video-play">
+                      <img src="css/img/video-time.png" alt="video time" id="video-time">
+          </div>
+          <img src="css/img/ipad.png" alt="ipad" class="second-post-photo three">
+          <img src="css/img/ipad-2.png" alt="ipad" class="second-post-photo four">
+          <div class="second-post-photo five"></div>
+          <img src="css/img/mountain.png" alt="mountain" class="second-post-photo six">
+          <img src="css/img/bridge.png" alt="bridge" class="second-post-photo seven">
         </div>
         <div class="likes-section">
+          <div id="likes-wrapper">
           <img src="css/img/star-blue.png" alt="blue star" class="blue-star">
           <img src="css/img/share.png" alt="share" class="share">
           <img src="css/img/complain.png" alt="complain" class="complain">
-          <span class="no-comments">Всего <span>0</span> комментариев</span>
+          <span class="no-comments"><span>0</span> комментариев</span>
           <img src="css/img/like.png" alt="like" class="like"><span class="likes-qnt">15</span>
           <img src="css/img/dislike.png" alt="dislike" class="dislike"><span class="dislikes-qnt">3</span>
+            </div>
+        </div>
+        <div class="comment-input-block">
+          <img class="input-user-pic" src="css/img/man-3.png" alt="user">
+          <input type="text" class="comment-input" placeholder="Комментировать...">
+
         </div>
       </div>
-
-
-
-
-
-
-
-
       <div class="post" id="fourth">
         <div class="post-head">
+
+          <img src="css/img/man-3.png" alt="Павел Пономарев" class="post-author-pic">
+
           <div class="post-info">
-            <img src="css/img/man-3.png" alt="Павел Пономарёв" class="post-author-pic">
-            <div class="post-author-textblock">
-              <span class="post-author-name">Павел Пономарёв</span>
-            </div>
-            <div class="post-other">
-              <span class="post-date">25.07.2015</span>
-              <img src="css/img/planet.png" alt="planet" class="planet">
-            </div>
-            <div class="post-arrow">
-              V
-            </div>
+            <span class="post-author-name">Павел Пономарев</span>
+            <span class="post-date">25.07.2015</span>
           </div>
+          <img src="css/img/arrow.png" alt="arrow down" class="arrow">
         </div>
-        <div id="auiopost">
+        <div id="audiopost">
 <img id="play-audio" alt="play" src="css/img/play-audio.png">
           <span id="singer">Sons of Maria</span><span id="song"> - Whatever you want to be (Original Mix)</span><span id="duration">5:07</span>
           </div>
@@ -666,13 +656,6 @@
 
           </div>
       </div>
-
-
-
-
-
-
-
       <div class="post" id="fifth">
         <div class="post-head">
           <div class="post-info">
@@ -708,7 +691,6 @@
 
         </div>
       </div>
-
     <div class="post" id="sixth">
       <div class="post-head">
         <div class="post-info">
@@ -772,7 +754,6 @@
     </div>
       </div>
     </div>
-
   </section>
   <aside>
 <header class="aside-header">
