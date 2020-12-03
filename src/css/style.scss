@@ -14,6 +14,10 @@ img[src='src/img/arrow.png'] {
   cursor: pointer;
 }
 
+.on-line {
+  cursor: grab;
+}
+
 @font-face {
   font-family: NerisBlack;
   src: url('Fonts/neris-black-webfont.ttf');

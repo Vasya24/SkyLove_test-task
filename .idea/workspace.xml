@@ -20,10 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="248b1499-cf33-44ba-9360-b183986641cd" name="Default Changelist" comment="UnderHeader done">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +92,7 @@
       <workItem from="1606810684966" duration="225000" />
       <workItem from="1606810979329" duration="7457000" />
       <workItem from="1606910288593" duration="18215000" />
-      <workItem from="1606972068174" duration="12534000" />
+      <workItem from="1606972068174" duration="12665000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1606056251726</created>
@@ -209,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606979644983</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="DONE">
+      <created>1606985447292</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1606985447292</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,6 +246,7 @@
     <MESSAGE value="Done with the third dropdown and fixed some bugs regarding mouse events" />
     <MESSAGE value="Part of comments done" />
     <MESSAGE value="99% done" />
-    <option name="LAST_COMMIT_MESSAGE" value="99% done" />
+    <MESSAGE value="DONE" />
+    <option name="LAST_COMMIT_MESSAGE" value="DONE" />
   </component>
 </project>
